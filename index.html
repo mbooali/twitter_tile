@@ -1,0 +1,37 @@
+<html>
+    <head>
+	<script type="text/JavaScript">
+<!--
+function AutoRefresh( t ) {
+	setTimeout("location.reload(true);", t);
+}
+//   -->
+</script>
+	</head>
+    <body onload="JavaScript:AutoRefresh(5000);" >
+        <style>
+        #twitter-widget-0 {
+            width: 100% !important; 
+        }
+        
+         #tfeed {        
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+			width: 70%;
+        
+            margin: auto;
+         }
+		#tfeed .twtr-doc, 
+		#tfeed .twtr-hd a, 
+		#tfeed h3, 
+		#tfeed h4{ background:none !important;}
+    </style>
+        <div id="tfeed">
+            <a class="twitter-timeline" href="https://twitter.com/coursenetwork" data-widget-id="573580342969372672"  data-tweet-limit="5"></a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </body>
+</html>
